@@ -1,0 +1,2285 @@
+select count(c.maincategory),y.launchyear,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+group by y.launchyear,c.maincategory;
+
+169	2009	Art
+23	2009	Comics
+11	2009	Crafts
+8	2009	Dance
+31	2009	Design
+26	2009	Fashion
+329	2009	Film & Video
+32	2009	Food
+46	2009	Games
+41	2009	Journalism
+295	2009	Music
+73	2009	Photography
+129	2009	Publishing
+60	2009	Technology
+56	2009	Theater
+856	2010	Art
+266	2010	Comics
+55	2010	Crafts
+169	2010	Dance
+166	2010	Design
+173	2010	Fashion
+3684	2010	Film & Video
+258	2010	Food
+234	2010	Games
+188	2010	Journalism
+2466	2010	Music
+466	2010	Photography
+705	2010	Publishing
+225	2010	Technology
+607	2010	Theater
+2340	2011	Art
+590	2011	Comics
+117	2011	Crafts
+413	2011	Dance
+903	2011	Design
+603	2011	Fashion
+8003	2011	Film & Video
+628	2011	Food
+801	2011	Games
+170	2011	Journalism
+6615	2011	Music
+870	2011	Photography
+2256	2011	Publishing
+457	2011	Technology
+1471	2011	Theater
+3433	2012	Art
+1165	2012	Comics
+316	2012	Crafts
+510	2012	Dance
+1841	2012	Design
+1647	2012	Fashion
+9398	2012	Film & Video
+1810	2012	Food
+2782	2012	Games
+278	2012	Journalism
+8860	2012	Music
+1184	2012	Photography
+5349	2012	Publishing
+812	2012	Technology
+1778	2012	Theater
+3440	2013	Art
+1396	2013	Comics
+483	2013	Crafts
+541	2013	Dance
+3246	2013	Design
+2410	2013	Fashion
+9534	2013	Film & Video
+2259	2013	Food
+4090	2013	Games
+209	2013	Journalism
+6887	2013	Music
+1239	2013	Photography
+5801	2013	Publishing
+1826	2013	Technology
+1475	2013	Theater
+5044	2014	Art
+1582	2014	Comics
+1922	2014	Crafts
+703	2014	Dance
+5393	2014	Design
+4341	2014	Fashion
+9697	2014	Film & Video
+6462	2014	Food
+6008	2014	Games
+930	2014	Journalism
+7062	2014	Music
+2376	2014	Photography
+7214	2014	Publishing
+6455	2014	Technology
+1803	2014	Theater
+5321	2015	Art
+1922	2015	Comics
+2587	2015	Crafts
+623	2015	Dance
+6704	2015	Design
+5276	2015	Fashion
+9695	2015	Film & Video
+6162	2015	Food
+7418	2015	Games
+1472	2015	Journalism
+7069	2015	Music
+2189	2015	Photography
+7094	2015	Publishing
+9703	2015	Technology
+1684	2015	Theater
+3581	2016	Art
+1870	2016	Comics
+1773	2016	Crafts
+430	2016	Dance
+5906	2016	Design
+4120	2016	Fashion
+6830	2016	Film & Video
+3791	2016	Food
+6937	2016	Games
+839	2016	Journalism
+5400	2016	Music
+1340	2016	Photography
+5560	2016	Publishing
+7027	2016	Technology
+1132	2016	Theater
+3950	2017	Art
+2002	2017	Comics
+1542	2017	Crafts
+370	2017	Dance
+5866	2017	Design
+4210	2017	Fashion
+5513	2017	Film & Video
+3192	2017	Food
+6893	2017	Games
+623	2017	Journalism
+4857	2017	Music
+1039	2017	Photography
+5254	2017	Publishing
+5986	2017	Technology
+903	2017	Theater
+18	2018	Art
+3	2018	Comics
+3	2018	Crafts
+9	2018	Design
+6	2018	Fashion
+10	2018	Film & Video
+5	2018	Food
+17	2018	Games
+4	2018	Journalism
+18	2018	Music
+2	2018	Photography
+16	2018	Publishing
+11	2018	Technology
+2	2018	Theater
+
+
+select count(c.maincategory),y.launchyear,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+group by y.launchyear,c.maincategory
+order by c.maincategory;
+
+3440	2013	Art
+3581	2016	Art
+3433	2012	Art
+169	2009	Art
+5044	2014	Art
+18	2018	Art
+856	2010	Art
+5321	2015	Art
+3950	2017	Art
+2340	2011	Art
+590	2011	Comics
+3	2018	Comics
+1582	2014	Comics
+266	2010	Comics
+1396	2013	Comics
+2002	2017	Comics
+1922	2015	Comics
+1870	2016	Comics
+1165	2012	Comics
+23	2009	Comics
+11	2009	Crafts
+3	2018	Crafts
+117	2011	Crafts
+483	2013	Crafts
+2587	2015	Crafts
+1542	2017	Crafts
+1773	2016	Crafts
+55	2010	Crafts
+316	2012	Crafts
+1922	2014	Crafts
+8	2009	Dance
+510	2012	Dance
+169	2010	Dance
+370	2017	Dance
+430	2016	Dance
+413	2011	Dance
+623	2015	Dance
+703	2014	Dance
+541	2013	Dance
+5906	2016	Design
+903	2011	Design
+6704	2015	Design
+9	2018	Design
+1841	2012	Design
+3246	2013	Design
+166	2010	Design
+5866	2017	Design
+31	2009	Design
+5393	2014	Design
+26	2009	Fashion
+173	2010	Fashion
+4210	2017	Fashion
+5276	2015	Fashion
+1647	2012	Fashion
+603	2011	Fashion
+4341	2014	Fashion
+6	2018	Fashion
+2410	2013	Fashion
+4120	2016	Fashion
+9398	2012	Film & Video
+3684	2010	Film & Video
+9697	2014	Film & Video
+10	2018	Film & Video
+6830	2016	Film & Video
+5513	2017	Film & Video
+329	2009	Film & Video
+9695	2015	Film & Video
+8003	2011	Film & Video
+9534	2013	Film & Video
+6462	2014	Food
+2259	2013	Food
+6162	2015	Food
+3192	2017	Food
+628	2011	Food
+32	2009	Food
+258	2010	Food
+3791	2016	Food
+1810	2012	Food
+5	2018	Food
+7418	2015	Games
+801	2011	Games
+6008	2014	Games
+6937	2016	Games
+46	2009	Games
+17	2018	Games
+2782	2012	Games
+234	2010	Games
+4090	2013	Games
+6893	2017	Games
+41	2009	Journalism
+623	2017	Journalism
+839	2016	Journalism
+1472	2015	Journalism
+930	2014	Journalism
+209	2013	Journalism
+4	2018	Journalism
+278	2012	Journalism
+170	2011	Journalism
+188	2010	Journalism
+8860	2012	Music
+7062	2014	Music
+4857	2017	Music
+7069	2015	Music
+18	2018	Music
+5400	2016	Music
+295	2009	Music
+2466	2010	Music
+6887	2013	Music
+6615	2011	Music
+1184	2012	Photography
+1239	2013	Photography
+870	2011	Photography
+73	2009	Photography
+2376	2014	Photography
+2189	2015	Photography
+2	2018	Photography
+466	2010	Photography
+1340	2016	Photography
+1039	2017	Photography
+16	2018	Publishing
+5801	2013	Publishing
+5349	2012	Publishing
+5254	2017	Publishing
+129	2009	Publishing
+2256	2011	Publishing
+7214	2014	Publishing
+5560	2016	Publishing
+7094	2015	Publishing
+705	2010	Publishing
+60	2009	Technology
+225	2010	Technology
+457	2011	Technology
+1826	2013	Technology
+812	2012	Technology
+7027	2016	Technology
+5986	2017	Technology
+6455	2014	Technology
+11	2018	Technology
+9703	2015	Technology
+2	2018	Theater
+903	2017	Theater
+1132	2016	Theater
+1684	2015	Theater
+1803	2014	Theater
+1778	2012	Theater
+1471	2011	Theater
+607	2010	Theater
+56	2009	Theater
+1475	2013	Theater
+
+
+select count(c.maincategory),y.launchyear,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where dim_state=3
+group by y.launchyear,c.maincategory;
+order by c.maincategory;
+
+success year cat
+77	2009	Art
+12	2009	Comics
+4	2009	Crafts
+3	2009	Dance
+8	2009	Design
+4	2009	Fashion
+124	2009	Film & Video
+17	2009	Food
+23	2009	Games
+20	2009	Journalism
+157	2009	Music
+31	2009	Photography
+57	2009	Publishing
+19	2009	Technology
+23	2009	Theater
+382	2010	Art
+110	2010	Comics
+19	2010	Crafts
+108	2010	Dance
+69	2010	Design
+43	2010	Fashion
+1473	2010	Film & Video
+120	2010	Food
+70	2010	Games
+68	2010	Journalism
+1295	2010	Music
+190	2010	Photography
+222	2010	Publishing
+65	2010	Technology
+359	2010	Theater
+1189	2011	Art
+268	2011	Comics
+46	2011	Crafts
+299	2011	Dance
+302	2011	Design
+186	2011	Fashion
+3317	2011	Film & Video
+258	2011	Food
+284	2011	Games
+67	2011	Journalism
+3763	2011	Music
+331	2011	Photography
+758	2011	Publishing
+140	2011	Technology
+963	2011	Theater
+1694	2012	Art
+548	2012	Comics
+126	2012	Crafts
+368	2012	Dance
+760	2012	Design
+435	2012	Fashion
+3771	2012	Film & Video
+682	2012	Food
+941	2012	Games
+88	2012	Journalism
+4944	2012	Music
+407	2012	Photography
+1639	2012	Publishing
+325	2012	Technology
+1164	2012	Theater
+1684	2013	Art
+753	2013	Comics
+213	2013	Crafts
+388	2013	Dance
+1255	2013	Design
+776	2013	Fashion
+4029	2013	Film & Video
+947	2013	Food
+1490	2013	Games
+81	2013	Journalism
+3757	2013	Music
+443	2013	Photography
+1951	2013	Publishing
+672	2013	Technology
+963	2013	Theater
+1783	2014	Art
+820	2014	Comics
+381	2014	Crafts
+413	2014	Dance
+1718	2014	Design
+978	2014	Fashion
+3599	2014	Film & Video
+1385	2014	Food
+1984	2014	Games
+172	2014	Journalism
+3127	2014	Music
+543	2014	Photography
+2050	2014	Publishing
+1142	2014	Technology
+1011	2014	Theater
+1707	2015	Art
+994	2015	Comics
+526	2015	Crafts
+293	2015	Dance
+2046	2015	Design
+1094	2015	Fashion
+3004	2015	Film & Video
+1171	2015	Food
+2263	2015	Games
+248	2015	Journalism
+2611	2015	Music
+539	2015	Photography
+1973	2015	Publishing
+1601	2015	Technology
+901	2015	Theater
+1311	2016	Art
+1097	2016	Comics
+401	2016	Crafts
+262	2016	Dance
+2130	2016	Design
+926	2016	Fashion
+2391	2016	Film & Video
+791	2016	Food
+2592	2016	Games
+145	2016	Journalism
+2340	2016	Music
+469	2016	Photography
+1849	2016	Publishing
+1307	2016	Technology
+664	2016	Theater
+1683	2017	Art
+1240	2017	Comics
+399	2017	Crafts
+204	2017	Dance
+2261	2017	Design
+1151	2017	Fashion
+1904	2017	Film & Video
+714	2017	Food
+2871	2017	Games
+123	2017	Journalism
+2111	2017	Music
+352	2017	Photography
+1801	2017	Publishing
+1162	2017	Technology
+486	2017	Theater
+
+
+select count(c.maincategory),y.launchmonth,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+group by y.launchmonth,c.maincategory
+order by c.maincategory,y.launchmonth;
+
+2059	1	Art
+2254	2	Art
+2650	3	Art
+2377	4	Art
+2542	5	Art
+2469	6	Art
+2857	7	Art
+2520	8	Art
+2267	9	Art
+2281	10	Art
+2239	11	Art
+1637	12	Art
+742	1	Comics
+853	2	Comics
+1036	3	Comics
+895	4	Comics
+982	5	Comics
+946	6	Comics
+974	7	Comics
+978	8	Comics
+931	9	Comics
+1125	10	Comics
+907	11	Comics
+450	12	Comics
+727	1	Crafts
+687	2	Crafts
+791	3	Crafts
+670	4	Crafts
+612	5	Crafts
+649	6	Crafts
+956	7	Crafts
+895	8	Crafts
+716	9	Crafts
+807	10	Crafts
+777	11	Crafts
+522	12	Crafts
+267	1	Dance
+305	2	Dance
+352	3	Dance
+371	4	Dance
+348	5	Dance
+325	6	Dance
+346	7	Dance
+305	8	Dance
+288	9	Dance
+323	10	Dance
+292	11	Dance
+245	12	Dance
+2043	1	Design
+2083	2	Design
+2574	3	Design
+2419	4	Design
+2498	5	Design
+2664	6	Design
+2613	7	Design
+2455	8	Design
+2644	9	Design
+2917	10	Design
+3217	11	Design
+1938	12	Design
+1654	1	Fashion
+1735	2	Fashion
+1900	3	Fashion
+1765	4	Fashion
+1881	5	Fashion
+2044	6	Fashion
+2154	7	Fashion
+1917	8	Fashion
+1877	9	Fashion
+2165	10	Fashion
+2224	11	Fashion
+1496	12	Fashion
+4711	1	Film & Video
+5170	2	Film & Video
+5888	3	Film & Video
+5768	4	Film & Video
+5553	5	Film & Video
+5716	6	Film & Video
+5706	7	Film & Video
+5153	8	Film & Video
+4793	9	Film & Video
+5289	10	Film & Video
+5103	11	Film & Video
+3843	12	Film & Video
+1769	1	Food
+1958	2	Food
+2096	3	Food
+2010	4	Food
+1864	5	Food
+1735	6	Food
+3372	7	Food
+2276	8	Food
+2039	9	Food
+2002	10	Food
+1996	11	Food
+1482	12	Food
+2491	1	Games
+2652	2	Games
+3046	3	Games
+2978	4	Games
+3153	5	Games
+2943	6	Games
+3127	7	Games
+3009	8	Games
+3105	9	Games
+3599	10	Games
+3128	11	Games
+1995	12	Games
+367	1	Journalism
+402	2	Journalism
+424	3	Journalism
+396	4	Journalism
+361	5	Journalism
+387	6	Journalism
+532	7	Journalism
+437	8	Journalism
+401	9	Journalism
+339	10	Journalism
+389	11	Journalism
+319	12	Journalism
+3901	1	Music
+4220	2	Music
+4514	3	Music
+4395	4	Music
+4489	5	Music
+4268	6	Music
+4344	7	Music
+4113	8	Music
+3874	9	Music
+4116	10	Music
+4162	11	Music
+3133	12	Music
+832	1	Photography
+799	2	Photography
+964	3	Photography
+834	4	Photography
+948	5	Photography
+913	6	Photography
+1310	7	Photography
+925	8	Photography
+878	9	Photography
+899	10	Photography
+893	11	Photography
+583	12	Photography
+2971	1	Publishing
+3014	2	Publishing
+3452	3	Publishing
+3214	4	Publishing
+3513	5	Publishing
+3346	6	Publishing
+3619	7	Publishing
+3353	8	Publishing
+3289	9	Publishing
+3633	10	Publishing
+3511	11	Publishing
+2463	12	Publishing
+2203	1	Technology
+2369	2	Technology
+2787	3	Technology
+2628	4	Technology
+2706	5	Technology
+2803	6	Technology
+3068	7	Technology
+2823	8	Technology
+2836	9	Technology
+2948	10	Technology
+3054	11	Technology
+2337	12	Technology
+755	1	Theater
+839	2	Theater
+1037	3	Theater
+1124	4	Theater
+1204	5	Theater
+1207	6	Theater
+1118	7	Theater
+840	8	Theater
+829	9	Theater
+732	10	Theater
+664	11	Theater
+562	12	Theater
+
+
+select count(c.maincategory),y.launchmonth,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where f.dim_state=3
+group by y.launchmonth,c.maincategory
+order by c.maincategory,y.launchmonth;
+
+776	1	Art
+889	2	Art
+1194	3	Art
+1087	4	Art
+1075	5	Art
+1102	6	Art
+1085	7	Art
+974	8	Art
+973	9	Art
+936	10	Art
+890	11	Art
+529	12	Art
+414	1	Comics
+496	2	Comics
+584	3	Comics
+480	4	Comics
+531	5	Comics
+486	6	Comics
+527	7	Comics
+522	8	Comics
+520	9	Comics
+628	10	Comics
+489	11	Comics
+165	12	Comics
+173	1	Crafts
+161	2	Crafts
+209	3	Crafts
+160	4	Crafts
+160	5	Crafts
+161	6	Crafts
+208	7	Crafts
+203	8	Crafts
+190	9	Crafts
+209	10	Crafts
+187	11	Crafts
+94	12	Crafts
+153	1	Dance
+204	2	Dance
+228	3	Dance
+245	4	Dance
+220	5	Dance
+209	6	Dance
+195	7	Dance
+181	8	Dance
+184	9	Dance
+212	10	Dance
+168	11	Dance
+139	12	Dance
+687	1	Design
+742	2	Design
+919	3	Design
+890	4	Design
+829	5	Design
+932	6	Design
+878	7	Design
+863	8	Design
+971	9	Design
+1111	10	Design
+1179	11	Design
+548	12	Design
+362	1	Fashion
+415	2	Fashion
+471	3	Fashion
+449	4	Fashion
+487	5	Fashion
+474	6	Fashion
+472	7	Fashion
+461	8	Fashion
+493	9	Fashion
+612	10	Fashion
+600	11	Fashion
+297	12	Fashion
+1713	1	Film & Video
+2176	2	Film & Video
+2435	3	Film & Video
+2269	4	Film & Video
+2028	5	Film & Video
+2071	6	Film & Video
+2003	7	Film & Video
+1742	8	Film & Video
+1745	9	Film & Video
+2073	10	Film & Video
+2005	11	Film & Video
+1352	12	Film & Video
+392	1	Food
+502	2	Food
+607	3	Food
+580	4	Food
+530	5	Food
+461	6	Food
+674	7	Food
+480	8	Food
+537	9	Food
+486	10	Food
+522	11	Food
+314	12	Food
+898	1	Games
+966	2	Games
+1129	3	Games
+1096	4	Games
+1139	5	Games
+1042	6	Games
+1062	7	Games
+1078	8	Games
+1197	9	Games
+1278	10	Games
+1100	11	Games
+533	12	Games
+76	1	Journalism
+76	2	Journalism
+90	3	Journalism
+96	4	Journalism
+76	5	Journalism
+95	6	Journalism
+95	7	Journalism
+90	8	Journalism
+83	9	Journalism
+80	10	Journalism
+93	11	Journalism
+62	12	Journalism
+1915	1	Music
+2140	2	Music
+2264	3	Music
+2154	4	Music
+2173	5	Music
+2105	6	Music
+1969	7	Music
+1907	8	Music
+1895	9	Music
+2105	10	Music
+2086	11	Music
+1392	12	Music
+230	1	Photography
+269	2	Photography
+304	3	Photography
+307	4	Photography
+336	5	Photography
+272	6	Photography
+313	7	Photography
+258	8	Photography
+288	9	Photography
+293	10	Photography
+273	11	Photography
+162	12	Photography
+845	1	Publishing
+994	2	Publishing
+1154	3	Publishing
+1024	4	Publishing
+1137	5	Publishing
+1017	6	Publishing
+1000	7	Publishing
+1026	8	Publishing
+1113	9	Publishing
+1280	10	Publishing
+1121	11	Publishing
+589	12	Publishing
+418	1	Technology
+462	2	Technology
+584	3	Technology
+506	4	Technology
+578	5	Technology
+552	6	Technology
+532	7	Technology
+557	8	Technology
+590	9	Technology
+603	10	Technology
+684	11	Technology
+367	12	Technology
+428	1	Theater
+511	2	Theater
+640	3	Theater
+691	4	Theater
+756	5	Theater
+794	6	Theater
+668	7	Theater
+478	8	Theater
+452	9	Theater
+444	10	Theater
+373	11	Theater
+299	12	Theater
+
+
+select count(c.maincategory),f.launchweekday,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+group by f.launchweekday,c.maincategory
+order by c.maincategory,f.launchweekday;
+
+1585	1	Art
+4538	2	Art
+5414	3	Art
+4963	4	Art
+4654	5	Art
+4515	6	Art
+2483	7	Art
+724	1	Comics
+1927	2	Comics
+2192	3	Comics
+1817	4	Comics
+1499	5	Comics
+1625	6	Comics
+1035	7	Comics
+498	1	Crafts
+1545	2	Crafts
+1741	3	Crafts
+1531	4	Crafts
+1335	5	Crafts
+1400	6	Crafts
+759	7	Crafts
+224	1	Dance
+534	2	Dance
+724	3	Dance
+688	4	Dance
+609	5	Dance
+638	6	Dance
+350	7	Dance
+1107	1	Design
+5023	2	Design
+7525	3	Design
+5724	4	Design
+4677	5	Design
+4041	6	Design
+1968	7	Design
+959	1	Fashion
+3933	2	Fashion
+4675	3	Fashion
+4168	4	Fashion
+3622	5	Fashion
+3565	6	Fashion
+1890	7	Fashion
+3802	1	Film & Video
+9686	2	Film & Video
+12170	3	Film & Video
+11008	4	Film & Video
+10566	5	Film & Video
+9766	6	Film & Video
+5695	7	Film & Video
+1332	1	Food
+4070	2	Food
+4762	3	Food
+4422	4	Food
+4034	5	Food
+3972	6	Food
+2007	7	Food
+1954	1	Games
+5651	2	Games
+7751	3	Games
+6114	4	Games
+5160	5	Games
+5328	6	Games
+3268	7	Games
+287	1	Journalism
+879	2	Journalism
+889	3	Journalism
+812	4	Journalism
+765	5	Journalism
+723	6	Journalism
+399	7	Journalism
+3149	1	Music
+7476	2	Music
+9301	3	Music
+8642	4	Music
+8066	5	Music
+8047	6	Music
+4848	7	Music
+691	1	Photography
+1703	2	Photography
+2070	3	Photography
+1958	4	Photography
+1731	5	Photography
+1694	6	Photography
+931	7	Photography
+2551	1	Publishing
+6281	2	Publishing
+7667	3	Publishing
+6785	4	Publishing
+6346	5	Publishing
+6157	6	Publishing
+3591	7	Publishing
+1199	1	Technology
+5622	2	Technology
+7551	3	Technology
+6252	4	Technology
+5122	5	Technology
+4609	6	Technology
+2207	7	Technology
+696	1	Theater
+1736	2	Theater
+2186	3	Theater
+1869	4	Theater
+1799	5	Theater
+1691	6	Theater
+934	7	Theater
+
+
+select count(c.maincategory),f.launchweekday,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where f.dim_state=3
+group by f.launchweekday,c.maincategory
+order by c.maincategory,f.launchweekday;
+
+665	1	Art
+1821	2	Art
+2243	3	Art
+2097	4	Art
+1945	5	Art
+1795	6	Art
+944	7	Art
+377	1	Comics
+1117	2	Comics
+1187	3	Comics
+1018	4	Comics
+768	5	Comics
+854	6	Comics
+521	7	Comics
+134	1	Crafts
+328	2	Crafts
+431	3	Crafts
+374	4	Crafts
+332	5	Crafts
+326	6	Crafts
+190	7	Crafts
+141	1	Dance
+338	2	Dance
+460	3	Dance
+420	4	Dance
+384	5	Dance
+397	6	Dance
+198	7	Dance
+368	1	Design
+1781	2	Design
+2951	3	Design
+2039	4	Design
+1575	5	Design
+1233	6	Design
+602	7	Design
+234	1	Fashion
+962	2	Fashion
+1276	3	Fashion
+1030	4	Fashion
+870	5	Fashion
+825	6	Fashion
+396	7	Fashion
+1366	1	Film & Video
+3747	2	Film & Video
+4697	3	Film & Video
+4322	4	Film & Video
+4051	5	Film & Video
+3547	6	Film & Video
+1882	7	Film & Video
+337	1	Food
+944	2	Food
+1283	3	Food
+1056	4	Food
+1023	5	Food
+970	6	Food
+472	7	Food
+639	1	Games
+1994	2	Games
+3162	3	Games
+2100	4	Games
+1725	5	Games
+1877	6	Games
+1021	7	Games
+58	1	Journalism
+198	2	Journalism
+200	3	Journalism
+167	4	Journalism
+167	5	Journalism
+140	6	Journalism
+82	7	Journalism
+1442	1	Music
+3698	2	Music
+4625	3	Music
+4274	4	Music
+3980	5	Music
+3875	6	Music
+2211	7	Music
+202	1	Photography
+528	2	Photography
+670	3	Photography
+558	4	Photography
+564	5	Photography
+524	6	Photography
+259	7	Photography
+772	1	Publishing
+2102	2	Publishing
+2436	3	Publishing
+2153	4	Publishing
+1999	5	Publishing
+1806	6	Publishing
+1032	7	Publishing
+224	1	Technology
+1104	2	Technology
+1808	3	Technology
+1269	4	Technology
+927	5	Technology
+751	6	Technology
+350	7	Technology
+428	1	Theater
+1083	2	Theater
+1334	3	Theater
+1142	4	Theater
+1041	5	Theater
+979	6	Theater
+527	7	Theater
+
+
+select count(c.maincategory),f.launchday,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where f.dim_state=3
+group by f.launchday,c.maincategory
+order by c.maincategory,f.launchday;
+
+531	1	Art
+393	2	Art
+399	3	Art
+367	4	Art
+353	5	Art
+385	6	Art
+379	7	Art
+354	8	Art
+388	9	Art
+443	10	Art
+365	11	Art
+424	12	Art
+391	13	Art
+353	14	Art
+414	15	Art
+390	16	Art
+391	17	Art
+376	18	Art
+393	19	Art
+371	20	Art
+400	21	Art
+330	22	Art
+327	23	Art
+382	24	Art
+351	25	Art
+301	26	Art
+308	27	Art
+366	28	Art
+328	29	Art
+346	30	Art
+211	31	Art
+382	1	Comics
+255	2	Comics
+224	3	Comics
+192	4	Comics
+203	5	Comics
+212	6	Comics
+186	7	Comics
+181	8	Comics
+163	9	Comics
+186	10	Comics
+183	11	Comics
+170	12	Comics
+182	13	Comics
+191	14	Comics
+198	15	Comics
+195	16	Comics
+187	17	Comics
+192	18	Comics
+178	19	Comics
+189	20	Comics
+179	21	Comics
+151	22	Comics
+161	23	Comics
+164	24	Comics
+176	25	Comics
+153	26	Comics
+151	27	Comics
+175	28	Comics
+181	29	Comics
+163	30	Comics
+139	31	Comics
+98	1	Crafts
+88	2	Crafts
+56	3	Crafts
+75	4	Crafts
+60	5	Crafts
+77	6	Crafts
+72	7	Crafts
+75	8	Crafts
+73	9	Crafts
+73	10	Crafts
+68	11	Crafts
+58	12	Crafts
+70	13	Crafts
+73	14	Crafts
+65	15	Crafts
+89	16	Crafts
+57	17	Crafts
+65	18	Crafts
+77	19	Crafts
+64	20	Crafts
+68	21	Crafts
+78	22	Crafts
+60	23	Crafts
+61	24	Crafts
+57	25	Crafts
+67	26	Crafts
+52	27	Crafts
+84	28	Crafts
+61	29	Crafts
+61	30	Crafts
+33	31	Crafts
+108	1	Dance
+84	2	Dance
+76	3	Dance
+96	4	Dance
+85	5	Dance
+74	6	Dance
+78	7	Dance
+81	8	Dance
+84	9	Dance
+84	10	Dance
+92	11	Dance
+67	12	Dance
+80	13	Dance
+79	14	Dance
+72	15	Dance
+70	16	Dance
+68	17	Dance
+78	18	Dance
+70	19	Dance
+80	20	Dance
+73	21	Dance
+75	22	Dance
+87	23	Dance
+48	24	Dance
+79	25	Dance
+65	26	Dance
+77	27	Dance
+74	28	Dance
+57	29	Dance
+54	30	Dance
+43	31	Dance
+476	1	Design
+342	2	Design
+352	3	Design
+346	4	Design
+329	5	Design
+371	6	Design
+377	7	Design
+335	8	Design
+314	9	Design
+356	10	Design
+357	11	Design
+370	12	Design
+334	13	Design
+364	14	Design
+438	15	Design
+306	16	Design
+379	17	Design
+344	18	Design
+346	19	Design
+354	20	Design
+359	21	Design
+321	22	Design
+328	23	Design
+339	24	Design
+306	25	Design
+317	26	Design
+308	27	Design
+296	28	Design
+289	29	Design
+306	30	Design
+190	31	Design
+292	1	Fashion
+208	2	Fashion
+195	3	Fashion
+182	4	Fashion
+174	5	Fashion
+178	6	Fashion
+191	7	Fashion
+183	8	Fashion
+193	9	Fashion
+177	10	Fashion
+199	11	Fashion
+175	12	Fashion
+166	13	Fashion
+193	14	Fashion
+217	15	Fashion
+195	16	Fashion
+163	17	Fashion
+192	18	Fashion
+190	19	Fashion
+185	20	Fashion
+164	21	Fashion
+165	22	Fashion
+169	23	Fashion
+157	24	Fashion
+170	25	Fashion
+171	26	Fashion
+186	27	Fashion
+163	28	Fashion
+148	29	Fashion
+153	30	Fashion
+99	31	Fashion
+985	1	Film & Video
+817	2	Film & Video
+831	3	Film & Video
+809	4	Film & Video
+740	5	Film & Video
+743	6	Film & Video
+796	7	Film & Video
+833	8	Film & Video
+861	9	Film & Video
+821	10	Film & Video
+781	11	Film & Video
+759	12	Film & Video
+774	13	Film & Video
+838	14	Film & Video
+767	15	Film & Video
+798	16	Film & Video
+775	17	Film & Video
+751	18	Film & Video
+798	19	Film & Video
+766	20	Film & Video
+832	21	Film & Video
+761	22	Film & Video
+746	23	Film & Video
+759	24	Film & Video
+729	25	Film & Video
+704	26	Film & Video
+654	27	Film & Video
+672	28	Film & Video
+656	29	Film & Video
+666	30	Film & Video
+390	31	Film & Video
+265	1	Food
+208	2	Food
+208	3	Food
+181	4	Food
+204	5	Food
+188	6	Food
+208	7	Food
+233	8	Food
+240	9	Food
+226	10	Food
+204	11	Food
+197	12	Food
+201	13	Food
+208	14	Food
+230	15	Food
+198	16	Food
+211	17	Food
+194	18	Food
+182	19	Food
+169	20	Food
+202	21	Food
+196	22	Food
+187	23	Food
+190	24	Food
+185	25	Food
+171	26	Food
+176	27	Food
+175	28	Food
+155	29	Food
+180	30	Food
+113	31	Food
+713	1	Games
+458	2	Games
+404	3	Games
+397	4	Games
+427	5	Games
+416	6	Games
+438	7	Games
+411	8	Games
+343	9	Games
+432	10	Games
+392	11	Games
+392	12	Games
+376	13	Games
+424	14	Games
+505	15	Games
+429	16	Games
+429	17	Games
+425	18	Games
+393	19	Games
+419	20	Games
+386	21	Games
+395	22	Games
+352	23	Games
+375	24	Games
+359	25	Games
+379	26	Games
+382	27	Games
+343	28	Games
+350	29	Games
+331	30	Games
+243	31	Games
+44	1	Journalism
+31	2	Journalism
+34	3	Journalism
+35	4	Journalism
+30	5	Journalism
+31	6	Journalism
+38	7	Journalism
+29	8	Journalism
+33	9	Journalism
+44	10	Journalism
+36	11	Journalism
+40	12	Journalism
+33	13	Journalism
+32	14	Journalism
+42	15	Journalism
+28	16	Journalism
+34	17	Journalism
+35	18	Journalism
+27	19	Journalism
+36	20	Journalism
+28	21	Journalism
+25	22	Journalism
+34	23	Journalism
+36	24	Journalism
+41	25	Journalism
+23	26	Journalism
+27	27	Journalism
+28	28	Journalism
+36	29	Journalism
+29	30	Journalism
+13	31	Journalism
+1168	1	Music
+952	2	Music
+814	3	Music
+781	4	Music
+832	5	Music
+826	6	Music
+845	7	Music
+810	8	Music
+824	9	Music
+841	10	Music
+764	11	Music
+798	12	Music
+840	13	Music
+764	14	Music
+817	15	Music
+742	16	Music
+774	17	Music
+773	18	Music
+817	19	Music
+755	20	Music
+768	21	Music
+783	22	Music
+692	23	Music
+731	24	Music
+706	25	Music
+729	26	Music
+676	27	Music
+719	28	Music
+663	29	Music
+636	30	Music
+465	31	Music
+144	1	Photography
+110	2	Photography
+126	3	Photography
+89	4	Photography
+118	5	Photography
+117	6	Photography
+101	7	Photography
+97	8	Photography
+102	9	Photography
+126	10	Photography
+122	11	Photography
+105	12	Photography
+98	13	Photography
+121	14	Photography
+108	15	Photography
+121	16	Photography
+105	17	Photography
+106	18	Photography
+100	19	Photography
+123	20	Photography
+118	21	Photography
+89	22	Photography
+105	23	Photography
+104	24	Photography
+90	25	Photography
+107	26	Photography
+92	27	Photography
+109	28	Photography
+94	29	Photography
+92	30	Photography
+66	31	Photography
+649	1	Publishing
+501	2	Publishing
+414	3	Publishing
+433	4	Publishing
+366	5	Publishing
+412	6	Publishing
+423	7	Publishing
+377	8	Publishing
+434	9	Publishing
+406	10	Publishing
+441	11	Publishing
+401	12	Publishing
+407	13	Publishing
+362	14	Publishing
+469	15	Publishing
+371	16	Publishing
+368	17	Publishing
+403	18	Publishing
+421	19	Publishing
+394	20	Publishing
+398	21	Publishing
+338	22	Publishing
+352	23	Publishing
+364	24	Publishing
+360	25	Publishing
+359	26	Publishing
+350	27	Publishing
+358	28	Publishing
+346	29	Publishing
+377	30	Publishing
+246	31	Publishing
+287	1	Technology
+237	2	Technology
+211	3	Technology
+205	4	Technology
+198	5	Technology
+217	6	Technology
+218	7	Technology
+202	8	Technology
+217	9	Technology
+230	10	Technology
+189	11	Technology
+215	12	Technology
+210	13	Technology
+257	14	Technology
+202	15	Technology
+215	16	Technology
+222	17	Technology
+196	18	Technology
+206	19	Technology
+231	20	Technology
+228	21	Technology
+194	22	Technology
+210	23	Technology
+198	24	Technology
+191	25	Technology
+173	26	Technology
+195	27	Technology
+207	28	Technology
+186	29	Technology
+168	30	Technology
+118	31	Technology
+278	1	Theater
+240	2	Theater
+225	3	Theater
+199	4	Theater
+217	5	Theater
+212	6	Theater
+231	7	Theater
+239	8	Theater
+217	9	Theater
+209	10	Theater
+219	11	Theater
+227	12	Theater
+222	13	Theater
+232	14	Theater
+226	15	Theater
+234	16	Theater
+175	17	Theater
+223	18	Theater
+228	19	Theater
+200	20	Theater
+251	21	Theater
+221	22	Theater
+209	23	Theater
+205	24	Theater
+185	25	Theater
+170	26	Theater
+201	27	Theater
+180	28	Theater
+160	29	Theater
+193	30	Theater
+106	31	Theater
+
+
+select count(c.maincategory),f.launchday,c.maincategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+group by f.launchday,c.maincategory
+order by c.maincategory,f.launchday;
+
+1162	1	Art
+954	2	Art
+934	3	Art
+947	4	Art
+913	5	Art
+918	6	Art
+942	7	Art
+909	8	Art
+1017	9	Art
+1040	10	Art
+973	11	Art
+1005	12	Art
+948	13	Art
+905	14	Art
+967	15	Art
+907	16	Art
+890	17	Art
+908	18	Art
+961	19	Art
+906	20	Art
+992	21	Art
+846	22	Art
+856	23	Art
+889	24	Art
+842	25	Art
+768	26	Art
+771	27	Art
+875	28	Art
+838	29	Art
+841	30	Art
+528	31	Art
+625	1	Comics
+442	2	Comics
+396	3	Comics
+365	4	Comics
+341	5	Comics
+376	6	Comics
+360	7	Comics
+344	8	Comics
+316	9	Comics
+351	10	Comics
+350	11	Comics
+319	12	Comics
+343	13	Comics
+365	14	Comics
+380	15	Comics
+344	16	Comics
+357	17	Comics
+323	18	Comics
+317	19	Comics
+356	20	Comics
+351	21	Comics
+302	22	Comics
+316	23	Comics
+322	24	Comics
+312	25	Comics
+303	26	Comics
+310	27	Comics
+327	28	Comics
+344	29	Comics
+321	30	Comics
+241	31	Comics
+325	1	Crafts
+314	2	Crafts
+262	3	Crafts
+302	4	Crafts
+281	5	Crafts
+289	6	Crafts
+280	7	Crafts
+310	8	Crafts
+326	9	Crafts
+304	10	Crafts
+323	11	Crafts
+275	12	Crafts
+283	13	Crafts
+300	14	Crafts
+284	15	Crafts
+303	16	Crafts
+288	17	Crafts
+269	18	Crafts
+278	19	Crafts
+310	20	Crafts
+282	21	Crafts
+305	22	Crafts
+263	23	Crafts
+257	24	Crafts
+260	25	Crafts
+253	26	Crafts
+257	27	Crafts
+307	28	Crafts
+282	29	Crafts
+255	30	Crafts
+182	31	Crafts
+161	1	Dance
+120	2	Dance
+125	3	Dance
+145	4	Dance
+141	5	Dance
+120	6	Dance
+114	7	Dance
+140	8	Dance
+132	9	Dance
+139	10	Dance
+129	11	Dance
+97	12	Dance
+127	13	Dance
+124	14	Dance
+116	15	Dance
+125	16	Dance
+123	17	Dance
+132	18	Dance
+123	19	Dance
+132	20	Dance
+121	21	Dance
+122	22	Dance
+133	23	Dance
+101	24	Dance
+123	25	Dance
+100	26	Dance
+127	27	Dance
+118	28	Dance
+93	29	Dance
+97	30	Dance
+67	31	Dance
+1272	1	Design
+957	2	Design
+971	3	Design
+967	4	Design
+974	5	Design
+994	6	Design
+1027	7	Design
+996	8	Design
+1029	9	Design
+1036	10	Design
+1008	11	Design
+1031	12	Design
+1040	13	Design
+986	14	Design
+1158	15	Design
+982	16	Design
+1020	17	Design
+1036	18	Design
+929	19	Design
+938	20	Design
+1000	21	Design
+960	22	Design
+945	23	Design
+952	24	Design
+862	25	Design
+878	26	Design
+917	27	Design
+944	28	Design
+848	29	Design
+869	30	Design
+539	31	Design
+890	1	Fashion
+768	2	Fashion
+750	3	Fashion
+749	4	Fashion
+750	5	Fashion
+770	6	Fashion
+787	7	Fashion
+738	8	Fashion
+800	9	Fashion
+747	10	Fashion
+805	11	Fashion
+767	12	Fashion
+697	13	Fashion
+714	14	Fashion
+829	15	Fashion
+749	16	Fashion
+720	17	Fashion
+778	18	Fashion
+752	19	Fashion
+745	20	Fashion
+781	21	Fashion
+689	22	Fashion
+722	23	Fashion
+719	24	Fashion
+696	25	Fashion
+671	26	Fashion
+727	27	Fashion
+733	28	Fashion
+681	29	Fashion
+652	30	Fashion
+436	31	Fashion
+2484	1	Film & Video
+2147	2	Film & Video
+2166	3	Film & Video
+2011	4	Film & Video
+2054	5	Film & Video
+1990	6	Film & Video
+2117	7	Film & Video
+2225	8	Film & Video
+2210	9	Film & Video
+2190	10	Film & Video
+2121	11	Film & Video
+2077	12	Film & Video
+2039	13	Film & Video
+2140	14	Film & Video
+2074	15	Film & Video
+2008	16	Film & Video
+2073	17	Film & Video
+2027	18	Film & Video
+2109	19	Film & Video
+2088	20	Film & Video
+2103	21	Film & Video
+2060	22	Film & Video
+2005	23	Film & Video
+2026	24	Film & Video
+1894	25	Film & Video
+1869	26	Film & Video
+1842	27	Film & Video
+1827	28	Film & Video
+1770	29	Film & Video
+1820	30	Film & Video
+1127	31	Film & Video
+915	1	Food
+837	2	Food
+717	3	Food
+808	4	Food
+792	5	Food
+819	6	Food
+818	7	Food
+971	8	Food
+1091	9	Food
+854	10	Food
+946	11	Food
+783	12	Food
+768	13	Food
+882	14	Food
+851	15	Food
+799	16	Food
+810	17	Food
+809	18	Food
+755	19	Food
+786	20	Food
+784	21	Food
+809	22	Food
+808	23	Food
+741	24	Food
+722	25	Food
+671	26	Food
+692	27	Food
+745	28	Food
+649	29	Food
+717	30	Food
+450	31	Food
+1783	1	Games
+1212	2	Games
+1180	3	Games
+1157	4	Games
+1182	5	Games
+1177	6	Games
+1172	7	Games
+1127	8	Games
+1135	9	Games
+1220	10	Games
+1086	11	Games
+1164	12	Games
+1110	13	Games
+1138	14	Games
+1294	15	Games
+1198	16	Games
+1112	17	Games
+1154	18	Games
+1182	19	Games
+1168	20	Games
+1145	21	Games
+1097	22	Games
+1009	23	Games
+1023	24	Games
+1049	25	Games
+1059	26	Games
+1126	27	Games
+1047	28	Games
+971	29	Games
+1024	30	Games
+725	31	Games
+171	1	Journalism
+162	2	Journalism
+162	3	Journalism
+149	4	Journalism
+142	5	Journalism
+151	6	Journalism
+184	7	Journalism
+153	8	Journalism
+175	9	Journalism
+168	10	Journalism
+166	11	Journalism
+169	12	Journalism
+148	13	Journalism
+146	14	Journalism
+175	15	Journalism
+173	16	Journalism
+150	17	Journalism
+173	18	Journalism
+140	19	Journalism
+156	20	Journalism
+160	21	Journalism
+157	22	Journalism
+130	23	Journalism
+145	24	Journalism
+155	25	Journalism
+131	26	Journalism
+156	27	Journalism
+154	28	Journalism
+131	29	Journalism
+146	30	Journalism
+76	31	Journalism
+2132	1	Music
+1844	2	Music
+1682	3	Music
+1610	4	Music
+1696	5	Music
+1672	6	Music
+1673	7	Music
+1660	8	Music
+1686	9	Music
+1689	10	Music
+1682	11	Music
+1614	12	Music
+1713	13	Music
+1661	14	Music
+1669	15	Music
+1521	16	Music
+1641	17	Music
+1593	18	Music
+1659	19	Music
+1536	20	Music
+1659	21	Music
+1644	22	Music
+1518	23	Music
+1532	24	Music
+1447	25	Music
+1518	26	Music
+1448	27	Music
+1495	28	Music
+1385	29	Music
+1331	30	Music
+919	31	Music
+402	1	Photography
+343	2	Photography
+359	3	Photography
+301	4	Photography
+365	5	Photography
+358	6	Photography
+344	7	Photography
+360	8	Photography
+392	9	Photography
+390	10	Photography
+412	11	Photography
+374	12	Photography
+356	13	Photography
+396	14	Photography
+352	15	Photography
+343	16	Photography
+360	17	Photography
+372	18	Photography
+318	19	Photography
+365	20	Photography
+395	21	Photography
+341	22	Photography
+295	23	Photography
+346	24	Photography
+331	25	Photography
+316	26	Photography
+305	27	Photography
+338	28	Photography
+311	29	Photography
+348	30	Photography
+190	31	Photography
+1771	1	Publishing
+1418	2	Publishing
+1336	3	Publishing
+1302	4	Publishing
+1267	5	Publishing
+1387	6	Publishing
+1355	7	Publishing
+1261	8	Publishing
+1357	9	Publishing
+1340	10	Publishing
+1397	11	Publishing
+1333	12	Publishing
+1265	13	Publishing
+1228	14	Publishing
+1380	15	Publishing
+1246	16	Publishing
+1255	17	Publishing
+1284	18	Publishing
+1301	19	Publishing
+1333	20	Publishing
+1267	21	Publishing
+1144	22	Publishing
+1173	23	Publishing
+1202	24	Publishing
+1188	25	Publishing
+1212	26	Publishing
+1159	27	Publishing
+1135	28	Publishing
+1131	29	Publishing
+1185	30	Publishing
+766	31	Publishing
+1226	1	Technology
+1108	2	Technology
+1079	3	Technology
+1062	4	Technology
+1026	5	Technology
+1093	6	Technology
+1002	7	Technology
+1108	8	Technology
+1148	9	Technology
+1110	10	Technology
+1122	11	Technology
+1028	12	Technology
+1125	13	Technology
+1107	14	Technology
+1077	15	Technology
+1125	16	Technology
+1095	17	Technology
+1048	18	Technology
+1058	19	Technology
+1102	20	Technology
+1076	21	Technology
+1011	22	Technology
+1093	23	Technology
+996	24	Technology
+994	25	Technology
+966	26	Technology
+1020	27	Technology
+1098	28	Technology
+962	29	Technology
+902	30	Technology
+595	31	Technology
+453	1	Theater
+399	2	Theater
+392	3	Theater
+350	4	Theater
+350	5	Theater
+334	6	Theater
+381	7	Theater
+409	8	Theater
+382	9	Theater
+353	10	Theater
+362	11	Theater
+387	12	Theater
+370	13	Theater
+403	14	Theater
+383	15	Theater
+369	16	Theater
+323	17	Theater
+346	18	Theater
+373	19	Theater
+341	20	Theater
+384	21	Theater
+366	22	Theater
+328	23	Theater
+341	24	Theater
+312	25	Theater
+297	26	Theater
+346	27	Theater
+318	28	Theater
+274	29	Theater
+303	30	Theater
+182	31	Theater
+
+
+
+
+select f.duration,count(f.id),avg(f.goal),avg(f.pledged),avg(f.backers) from facttable f
+where f.dim_state=3
+group by f.duration
+order by f.duration;
+
+1	35	571.5142857142857	1682.1379875728062	33.65714285714286
+2	55	1446.3636363636363	2067.0605435458097	35.67272727272727
+3	70	828.6571428571428	2473.5759959629604	66.61428571428571
+4	83	1072.3614457831325	2625.68216420369	98.4578313253012
+5	194	2196.422680412371	12108.566468543613	135.85051546391753
+6	148	1203.6351351351352	2220.7578394090806	53.32432432432432
+7	804	1511.1380597014925	3279.1678989241964	74.57462686567165
+8	335	1898.5492537313432	7226.980359342205	141.83283582089553
+9	315	1703.857174603174	3135.5131762307788	65.19365079365079
+10	993	2058.240684793555	4648.816071059889	77.39073514602215
+11	418	3109.9511004726282	6020.047061719392	137.4019138755981
+12	496	2608.2513910108996	5126.950462772	93.91733870967742
+13	452	2631.2809734513276	5123.656044276415	86.68362831858407
+14	2079	2879.3602693602693	5979.304038512471	102.95574795574795
+15	2216	2997.61723377214	5339.51609820149	91.25586642599278
+16	926	3889.9328293604676	10430.136035943906	171.58315334773218
+17	854	4202.512997658527	11467.483491839514	178.04332552693208
+18	895	5635.212659202874	10624.76519894733	148.15977653631285
+19	724	4641.108839783221	14104.171445140522	148.23342541436463
+20	2726	4222.664600128823	8131.442503920042	103.03631694790903
+21	3581	5662.076199435415	14329.741679635004	153.46327841385087
+22	1537	6715.499557465334	17514.287773325912	213.82498373454783
+23	1242	6691.105819751291	22082.045418571928	249.30998389694042
+24	1347	7113.392605855895	16503.208654654318	230.086859688196
+25	2677	6361.630522940646	14768.712473775631	181.7807246918192
+26	1344	6816.253578912644	18150.713477066583	205.62872023809524
+27	1403	8270.36707056308	20114.02621288123	227.67569493941554
+28	2602	9803.751729438893	26415.58737072076	301.46464258262876
+29	2800	10926.866167853219	26447.050464416232	330.83464285714285
+30	53029	10061.335530756258	20056.559520393675	230.24045333685342
+31	6454	13455.158996184839	34416.96519695172	445.1643941741556
+32	3711	15819.727386170338	39386.04714592471	424.2336297493937
+33	2683	14876.958240897186	39042.852026718654	439.2963101006336
+34	1743	14038.340016315262	37483.10841545591	399.0619621342513
+35	3872	15520.931298910094	40675.58137865303	399.22004132231405
+36	1620	13983.582919801313	36075.752814267005	398.36728395061726
+37	1181	15657.07468320958	43300.1842379784	396.6375952582557
+38	954	13099.368972746332	52423.327422679846	487.7830188679245
+39	823	14700.185905224787	39918.84636516733	363.56743620899147
+40	3284	14531.353821665012	36415.190160470236	328.06912302070646
+41	804	12584.388283345237	27415.920394707675	265.46019900497515
+42	820	12235.824390243903	31162.613299783847	331.8890243902439
+43	600	13631.861666666666	35457.1370980072	366.26666666666665
+44	638	12441.275877375589	57095.07498728594	416.22257053291537
+45	5008	15606.656489655614	40936.49671230225	360.0966453674121
+46	877	13173.523614829051	39890.1613101981	350.79247434435575
+47	516	12837.170542635658	30811.35629934858	471.0988372093023
+48	333	10936.897897897898	21914.809804922108	233.96096096096096
+49	344	14656.20555292174	42724.94291349899	338.95348837209303
+50	742	11100.103773584906	29470.69624402645	252.32614555256066
+51	292	9554.72637103355	40677.78676615676	738.25
+52	251	12024.115537848606	20493.257674927732	214.15537848605578
+53	242	10607.722561418517	77908.2868547676	457.8884297520661
+54	212	7469.023584905661	23631.575111821014	231.28301886792454
+55	274	11982.979306854471	28498.660462539563	317.7846715328467
+56	215	10594.232558139534	24318.790785394714	320.27906976744185
+57	211	7338.582938388626	18282.493289025475	214.53080568720378
+58	236	8272.864406779661	70105.046431202	411.1186440677966
+59	445	13167.478651685393	44235.809652607095	294.07865168539325
+60	6217	10831.433870047718	27510.149705668613	265.52678140582276
+61	284	5424.658450704225	6961.352739468427	92.3556338028169
+62	104	4999.741445688101	6075.75903907189	78.75
+63	59	5767.966101694915	6535.581174688824	83.71186440677967
+64	42	7659.523809523809	8892.018804640997	98.07142857142857
+65	49	5463.285714285715	6572.416299625319	84.71428571428571
+66	49	6182.877551020408	7163.592029805086	86.06122448979592
+67	39	5426.282051282052	6820.4684651692705	97.02564102564102
+68	29	5434.482758620689	8330.210083007812	136.6551724137931
+69	25	5859.16	7417.835244140625	93.72
+70	43	4166.325581395349	5687.5988315316135	103.46511627906976
+71	43	5506.720930232558	8783.871184593023	109.13953488372093
+72	36	4029.6388888888887	4648.630839029948	67.86111111111111
+73	21	5645.476190476191	8395.00327845982	156.8095238095238
+74	20	8635.0	9567.93897705078	95.05
+75	33	11402.272727272728	23067.023677941525	283.030303030303
+76	31	4742.935483870968	5686.013243644468	72.83870967741936
+77	21	5071.428571428572	5682.379522414434	70.95238095238095
+78	19	4178.9473684210525	4674.325265984786	53.8421052631579
+79	16	4090.625	4926.72815322876	69.6875
+80	27	5267.547779224537	5630.105565954138	52.77777777777778
+81	20	4650.0	8581.324472045899	141.3
+82	20	5278.75	6163.353002929687	70.15
+83	18	4411.111111111111	6715.919379340277	111.11111111111111
+84	19	5532.8942228618425	6128.164737099095	71.3157894736842
+85	18	4002.777777777778	5891.444993760851	52.44444444444444
+86	25	5479.538400878906	6604.052373046875	84.76
+87	18	4438.888888888889	4931.64166937934	66.16666666666667
+88	36	4859.027777777777	5380.846923828125	72.97222222222223
+89	137	4525.467153284671	5282.858252755047	67.14598540145985
+90	425	6765.885905330882	8451.71651503619	90.05882352941177
+91	138	6092.088336447011	7883.908759517946	78.04347826086956
+92	5	4300.0	4493.6	52.0
+
+
+
+select f.duration,count(f.id),avg(f.goal),avg(f.pledged),avg(f.backers) from facttable f
+where f.dim_state!=3
+group by f.duration
+order by f.duration;
+
+1	67	1655566.179	285.5589554	5.223880597
+2	95	16231.56842	50.35905263	1.789473684
+3	151	187756.7417	143.1245029	2.377483444
+4	128	596259.3594	196.521094	3.96875
+5	287	8725.623693	114.630662	2.526132404
+6	194	32782.02062	258.5656188	5.144329897
+7	968	22971.48492	268.5026241	5.100206612
+8	301	348190.0199	305.0274086	5.219269103
+9	266	120806.0376	303.8872932	4.338345865
+10	1282	14257.46099	248.7044152	4.204368175
+11	324	167075.3861	444.3688891	6.410493827
+12	452	184477.5715	734.6728542	11.11504425
+13	393	272042.5776	426.8547068	6.819338422
+14	2044	30210.10192	468.1842954	7.193248532
+15	3093	40965.45845	405.9310632	6.905916586
+16	698	17875.16105	878.0634361	12.31661891
+17	668	10196.3849	593.4076798	9.893712575
+18	754	18462.12105	1044.946622	11.97214854
+19	593	14041.37268	1314.56263	16.60539629
+20	4014	18922.51271	721.0091164	8.92326856
+21	3057	51586.46758	1169.598999	14.10762185
+22	1137	42931.11041	1456.171435	20.32277924
+23	991	41809.45623	1473.902092	16.55196771
+24	1180	99888.66401	1519.788257	17.94915254
+25	3404	45720.86398	1153.250526	13.79494712
+26	1244	29365.10249	1743.048828	20.9807074
+27	1510	26546.57015	1491.270896	17.64569536
+28	2792	28696.91765	3351.416936	30.74426934
+29	3318	36931.52291	2609.210491	26.52169982
+30	114390	51118.48771	1393.561076	16.29673923
+31	6650	44808.57816	3339.714993	38.07112782
+32	3508	39373.82012	3096.928984	37.12314709
+33	3050	52964.05249	4535.843811	48.60688525
+34	1829	37661.52572	3830.834762	38.86604702
+35	6143	42677.4345	3739.615024	37.55673124
+36	1785	46401.07285	3608.643757	36.57086835
+37	1380	36886.74493	3289.146943	35.4
+38	1221	49114.41768	3609.864388	38.06224406
+39	1093	42694.41854	4126.709741	34.7904849
+40	6653	66888.70212	2598.336316	25.87329025
+41	1004	114322.6122	3176.701085	31.17330677
+42	1172	109918.9632	3081.123558	32.39249147
+43	802	35388.58021	3127.57096	31.57107232
+44	927	59647.54004	2443.589113	26.600863
+45	12630	67531.2238	2678.886851	25.10688836
+46	1138	65570.35714	4025.569654	38.22495606
+47	730	41906.92109	2464.6643	24.45342466
+48	617	34714.06321	2186.623596	19.78768233
+49	568	48044.73944	3121.955745	21.29401408
+50	1873	36546.44966	2694.89073	22.98878804
+51	559	100229.7907	2809.762534	17.88729875
+52	482	56936.2778	2995.064712	25.7966805
+53	434	70022.85484	1569.268593	16.57142857
+54	439	287248.072	1358.955436	15.523918
+55	640	286039.8752	2560.853692	26.1109375
+56	528	121993.8466	1825.829033	17.55871212
+57	540	163358.313	1232.20961	13.87037037
+58	713	287795.2076	1742.2309	14.82047686
+59	1420	189719.6855	2228.622718	13.60633803
+60	27083	198678.7415	1403.566348	13.35871211
+61	475	17568.34379	674.7271579	10.72842105
+62	134	10077.09067	757.1778318	10.43283582
+63	74	12822.17446	521.4594595	7.905405405
+64	47	14328.40426	981.3602113	10.59574468
+65	69	11115	1046.484638	12.98550725
+66	66	7674.262577	994.3028823	13.93939394
+67	39	15391.94872	820.6030772	11.64102564
+68	38	27294.73684	2767.565314	35.02631579
+69	41	12742.68317	495.5121951	7.682926829
+70	67	12919.46059	1130.094333	11.58208955
+71	44	11129.54545	609.5684093	8.431818182
+72	46	12034.78261	787.5160881	7.847826087
+73	35	5638.571429	387.5951451	7.857142857
+74	26	15830.96154	625.6546155	10.80769231
+75	62	15207.17742	1616.615	16.98387097
+76	56	10248.21429	877.0176828	9.821428571
+77	31	12746.77419	470.1612903	7.903225806
+78	36	11340.27778	556.2436112	11.97222222
+79	23	14167.3913	655.0434783	9.086956522
+80	42	12136.69048	633.902617	8.714285714
+81	35	14206.43428	833.3857143	11.11428571
+82	34	8382.852941	610.7941176	9.441176471
+83	36	10893.75	343.7444441	6.944444444
+84	38	576530.3947	347.9271047	5.973684211
+85	42	11104.10048	264.8411902	5
+86	48	481995.7083	587.90625	8.979166667
+87	49	7270.887755	364.8353066	6.93877551
+88	81	9644.313585	368.1117286	6.296296296
+89	289	11274.24439	535.642907	7.951557093
+90	1148	55717.71774	623.0808879	8.659407666
+91	329	55798.09419	877.2385391	10.56231003
+92	17	27863.35294	828.2823529	15.17647059
+
+
+
+
+select count(f.id),avg(f.goal),avg(f.pledged),avg(f.backers),avg(f.duration),c.country,c.currency from facttable f
+join dim_country c on f.dim_country=c.var1
+where f.dim_state=3
+group by c.country,c.currency;
+
+
+107	15775.616822429907	70293.27510883652	538.7570093457944	35.1588785046729	AT	EUR
+2010	10115.035323383085	23846.39955363487	263.8845771144279	31.034825870646767	AU	AUD
+152	13465.407894736842	21972.738130638474	182.3421052631579	33.60526315789474	BE	EUR
+4134	9324.759554910499	22957.110542194936	267.06482825350747	31.97822931785196	CA	CAD
+187	20799.213903743315	59409.89388626017	309.39572192513367	33.288770053475936	CH	CHF
+937	12199.983991462113	32061.131039799595	368.5933831376734	32.66808964781217	DE	EUR
+360	60888.04722222222	121000.19631958008	179.1611111111111	29.769444444444446	DK	DKK
+492	8747.0	18529.794728916833	263.9959349593496	31.191056910569106	ES	EUR
+908	11874.689427312775	30008.59274062081	333.3920704845815	33.40088105726872	FR	EUR
+12067	5535.575619458026	11435.944176211791	202.74716168061656	30.212894671417917	GB	GBP
+216	100440.35185185185	311997.0026312934	318.55555555555554	32.71296296296296	HK	HKD
+207	9707.80193236715	14218.115831163195	182.19323671497585	30.89855072463768	IE	EUR
+439	9028.703872437358	24404.878521686805	256.5603644646925	34.37357630979499	IT	EUR
+7	509552.85714285716	602579.4285714285	44.857142857142854	26.857142857142858	JP	JPY
+19	12898.947368421053	17403.414582905018	113.78947368421052	34.73684210526316	LU	EUR
+396	68719.55808080808	93042.75917870108	83.75757575757575	35.25252525252525	MX	MXN
+617	11251.998379254457	36314.11090666587	307.87520259319285	31.411669367909237	NL	EUR
+162	55991.01234567901	107496.60819347994	121.94444444444444	32.32098765432099	NO	NOK
+448	9920.638392857143	20506.494180440903	195.99107142857142	28.444196428571427	NZ	NZD
+509	74264.4047151277	190524.24093130295	285.65225933202356	31.825147347740668	SE	SEK
+178	13073.359550561798	37534.72837172733	332.9157303370786	31.53932584269663	SG	SGD
+109299	9695.67095472832	23213.21610229255	270.17795222280165	32.39208958910878	US	USD
+
+
+
+select count(f.id),avg(f.goal),avg(f.pledged),avg(f.backers),avg(f.duration),c.country,c.currency from facttable f
+join dim_country c on f.dim_country=c.var1
+where f.dim_state!=3
+group by c.country,c.currency;
+
+
+490	45080.4306122449	1996.338612708267	15.493877551020407	35.05714285714286	AT	EUR
+5829	93852.07445530966	1958.3303375064172	19.284268313604393	34.39903928632699	AU	AUD
+465	39973.28817204301	878.5758708994875	12.443010752688172	35.578494623655914	BE	EUR
+10622	72217.84645076256	1736.9869654517438	18.689229900207117	35.146488420259836	CA	CAD
+573	342315.58464223385	3047.758092164577	16.239092495637	36.39965095986038	CH	CHF
+3234	84599.84879406307	1712.2456205178355	20.029375386518243	35.00401978973407	DE	EUR
+753	324644.8326693227	8962.665757380633	16.697211155378486	34.91766268260292	DK	DKK
+1784	57738.86995515695	1369.0597909271985	19.24943946188341	35.097533632286996	ES	EUR
+2031	100326.1102904973	1736.9166712308975	23.384539635647464	36.369276218611525	FR	EUR
+21605	40779.46396667438	1086.984047327442	19.117657949548715	33.098588289747745	GB	GBP
+402	231888.63930348257	26764.034317467343	39.17164179104478	35.3134328358209	HK	HKD
+604	53712.97682119205	1302.544172729088	15.322847682119205	34.79304635761589	IE	EUR
+2439	81141.30217302173	1640.564202114176	17.510865108651085	37.7859778597786	IT	EUR
+33	2166484.8484848486	268640.0	49.333333333333336	32.666666666666664	JP	JPY
+43	38207.3023255814	1808.3769758357557	20.72093023255814	37.7906976744186	LU	EUR
+1356	342380.302359882	7185.344582414205	7.1342182890855455	37.45280235988201	MX	MXN
+2251	116312.26521545979	1624.747886680593	17.01110617503332	34.25144380275433	NL	EUR
+546	702051.4688644689	8655.601445348271	11.807692307692308	35.65018315018315	NO	NOK
+999	44419.58158158158	1607.1869775468522	14.594594594594595	33.388388388388385	NZ	NZD
+1248	449376.1049679487	13650.061958312988	19.18830128205128	34.145833333333336	SE	SEK
+377	25326.64721485411	3762.4627294034476	28.368700265251988	32.88063660477454	SG	SGD
+183319	64512.15156950452	1596.2012340168455	19.417932674736388	35.6585514867526	US	USD
+
+
+
+INSERT OVERWRITE LOCAL DIRECTORY '/home/cloudera/SubCategoryOutput'
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE
+select count(f.id),avg(f.goal),avg(f.pledged),avg(f.backers),y.launchyear,c.subcategory from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where f.dim_state=3
+group by c.subcategory,y.launchyear;
+
+

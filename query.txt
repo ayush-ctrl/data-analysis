@@ -1,0 +1,5 @@
+select f.ID,c.maincategory,y.launchyear from facttable f
+join dim_category c on f.dim_category=c.var1
+join dim_launchDate y on f.dim_launchdate=y.var1
+where y.launchyear=2009 and
+c.maincategory='Art';
